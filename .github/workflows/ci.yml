@@ -1,44 +1,28 @@
 name: CI
 on: [push]
 
+# needed to allow julia-actions/cache to delete old caches that it has created
+permissions:
+  actions: write
+  contents: read
+
 jobs:
   test:
-    strategy:
-      fail-fast: false
-      matrix:
-        subproject: ["."]
-    name: julia ${{ matrix.subproject}}
-    runs-on: self-hosted
+    name: Test
+    runs-on: ubuntu-latest
     env:
       PATH_LICENSE_STRING: "2830898829&Courtesy&&&USR&45321&5_1_2021&1000&PATH&GEN&31_12_2025&0_0_0&6000&0_0"
-      JULIA_NUM_THREADS: "3"
-      JULIA_PKG_SERVER: ""
-      JULIA_PROJECT: "${{ matrix.subproject }}"
     steps:
-      - name: Declare JULIA_DEPOT_PATH
-        run: |
-          echo "JULIA_DEPOT_PATH=$(mktemp -d)" >> $GITHUB_ENV
-      - uses: actions/checkout@v2
-      - uses: webfactory/ssh-agent@v0.5.4
-        with:
-          ssh-private-key: ${{ secrets.PRIVATE_PREVIEW }}
+      - uses: actions/checkout@v4
       - uses: julia-actions/setup-julia@v1
+      - uses: julia-actions/cache@v1
+      - uses: julia-actions/julia-runtest@v1
         with:
-          version: 1.10.0-beta2
-      - name: Run Tests
-        shell: bash
-        run: |
-          xvfb-run -a julia -e '
-            using Pkg: Pkg;
-            Pkg.test(; coverage=true);
-          '
+          prefix: "xvfb-run"
       - uses: julia-actions/julia-processcoverage@v1
-      - uses: codecov/codecov-action@v3
+      - uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./lcov.info
           flags: unittests
           name: codecov-umbrella
-      - name: Clean up JULIA_DEPOT_PATH
-        run: |
-          rm -rf $JULIA_DEPOT_PATH
