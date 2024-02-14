@@ -1370,7 +1370,9 @@ version = "0.12.3"
 
 [[deps.ParametricMCPs]]
 deps = ["ChainRulesCore", "ForwardDiff", "LinearAlgebra", "PATHSolver", "SparseArrays", "Symbolics"]
-git-tree-sha1 = "309195443bbfbd3d690a642ed62516d5d00c8084"
+git-tree-sha1 = "5948ce50b191d80a43282e950dc1668570b71b32"
+repo-rev = "feature/symbolics_parallel"
+repo-url = "https://github.com/lassepe/ParametricMCPs.jl.git"
 uuid = "9b992ff8-05bb-4ea1-b9d2-5ef72d82f7ad"
 version = "0.1.9"
 

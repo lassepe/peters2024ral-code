@@ -665,6 +665,7 @@ function MCPContingencySolver(
         lower_bounds,
         upper_bounds;
         compute_sensitivities,
+        parallel = Symbolics.ShardedForm()
     )
 
     @info "done generating..."
