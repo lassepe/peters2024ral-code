@@ -63,7 +63,7 @@ All simulations follow a similar pattern with separate functions for problem gen
 
 
 ```bibtex
-@article{peters2024contingency,
+@article{peters2024ral,
   title={Contingency Games for Multi-Agent Interaction},
   author={Peters, Lasse and Bajcsy, Andrea and Chiu, Chih-Yuan and Fridovich-Keil, David and Laine, Forrest and Ferranti, Laura and Alonso-Mora, Javier},
   journal={IEEE Robotics and Automation Letters (RA-L)},
