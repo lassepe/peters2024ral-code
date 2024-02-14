@@ -165,7 +165,6 @@ function visualize_gap(;
         gap = v.upper_bound_cost - v.contingency_cost
         if gap <= -1e-2
             @warn "Upper gap was negative, $gap, for state $(v.belief[begin].state)"
-            Infiltrator.@exfiltrate
             @assert false
             clip_to_zero && return 0.0
         end
@@ -378,8 +377,6 @@ function evaluate_solver(;
             context_state,
             shared_constraint_premultipliers = shared_responsibility,
         )
-
-        Infiltrator.@exfiltrate
     end
     @assert is_trunk_converged
     is_replanning_required =
@@ -458,8 +455,6 @@ function evaluate_solver(;
                 context_state,
                 shared_constraint_premultipliers = shared_responsibility,
             )
-
-            Infiltrator.@exfiltrate
         end
         @assert is_tail_converged
 
@@ -471,7 +466,7 @@ function evaluate_solver(;
                     trunk_strategy.substrategies,
                     tail_solution.strategy.substrategies,
                 ) do player_index, strategy, new_strategy
-                    # TODO: use a re-planner that is aware of the trunkated horizon for replanning
+                    # TODO: use a re-planner that is aware of the truncated horizon for replanning
                     branch_strategies = map(eachindex(belief)) do jj
                         # stitch the two solutions together along the time-axis
                         xs = [

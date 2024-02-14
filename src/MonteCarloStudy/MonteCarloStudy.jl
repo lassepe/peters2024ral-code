@@ -20,7 +20,6 @@ using ProgressMeter: ProgressMeter
 using Random: Random
 using TrajectoryGamesBase: JointStrategy, OpenLoopStrategy, TrajectoryGamesBase
 using TrajectoryGamesExamples: TrajectoryGamesExamples
-using Infiltrator: Infiltrator
 using SplitApplyCombine: SplitApplyCombine
 using Statistics: Statistics
 using StatsBase: StatsBase
@@ -31,7 +30,6 @@ using Measurements: Measurements
 using SparseArrays: SparseArrays, I
 using FileIO: FileIO
 using Accessors: @set, @reset
-using AlgebraOfGraphics: AlgebraOfGraphics as AOG
 using Roots: Roots
 using Dates: now
 
