@@ -1,3 +1,4 @@
 ignore:
   - "src/Archive/"
   - "src/MonteCarloStudy/"
+  - "src/Examples/"
