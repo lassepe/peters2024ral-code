@@ -3,10 +3,13 @@
 [![CI](https://github.com/lassepe/peters2024ral-code/actions/workflows/ci.yml/badge.svg)](https://github.com/lassepe/peters2024ral-code/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/lassepe/peters2024ral-code/graph/badge.svg?token=lFK1A8hj56)](https://codecov.io/gh/lassepe/peters2024ral-code)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)
+[![arXiv](https://img.shields.io/badge/arXiv-2304.05483-b31b1b.svg)](https://arxiv.org/abs/2304.05483)
+[![project website](https://img.shields.io/badge/project-website-purple.svg)](https://lasse-peters.net/pub/contingency-games)
+
 
 [![teaser](./media/teaser.png)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10400882)
 
-Code for the [RA-L 2024 paper "Contingency Games for Multi-Agent Interactions."]( https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10400882) [[arXiv](https://arxiv.org/abs/2304.05483)]
+Code for the [RA-L 2024 paper "Contingency Games for Multi-Agent Interactions."]( https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10400882) [[arXiv](https://arxiv.org/abs/2304.05483)] [[project website](https://lasse-peters.net/pub/contingency-games) for more information.]
 
 ---
 
