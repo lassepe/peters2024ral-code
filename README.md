@@ -9,7 +9,8 @@
 
 [![teaser](./media/teaser.png)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10400882)
 
-Code for the [RA-L 2024 paper "Contingency Games for Multi-Agent Interactions."]( https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10400882) [[arXiv](https://arxiv.org/abs/2304.05483)] [[project website](https://lasse-peters.net/pub/contingency-games) for more information.]
+Code for the [RA-L 2024 paper "Contingency Games for Multi-Agent Interactions."]( https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10400882)
+Visit the [project website](https://lasse-peters.net/pub/contingency-games) for more information, including an interactive demo of our approach.
 
 ---
 
@@ -28,11 +29,9 @@ Code for the [RA-L 2024 paper "Contingency Games for Multi-Agent Interactions."]
 From a Julia REPL started at the repository root as `julia --project` run the following code:
 
 ```julia
-begin
 using ContingencyGames
 demo_setup = ContingencyGames.Examples.setup_crosswalk_demo()
 ContingencyGames.Examples.demo(demo_setup)
-end
 ```
 
 This should spin up a GUI of a receding-horizon simulation in which you can also interactive set the parameters of the planner and the simulation environment.
