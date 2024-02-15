@@ -20,7 +20,7 @@ Visit the [project website](https://lasse-peters.net/pub/contingency-games) for 
 
 1. Install Julia 1.10 or higher.
 
-2. Export the environment variable `PATH_LICENSE_STRING` with a value set to a valid license string; for example, the ["courtesy license"](https://pages.cs.wisc.edu/~ferris/path/LICENSE) from Michael Ferris' website which we need to run larger problems.
+2. Export the environment variable `PATH_LICENSE_STRING` with a value set to a valid license string; for example, the ["courtesy license"](https://pages.cs.wisc.edu/~ferris/path/LICENSE) from Michael Ferris' website. We need a license to solve larger problems.
 
 3. Start Julia in the repository root as `julia --project` to activate the environment. Hit `]` to enter package mode and run `instantiate` to instantiate all the dependencies recorded for this environment.
 
