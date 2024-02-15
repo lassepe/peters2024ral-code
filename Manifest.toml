@@ -2,7 +2,7 @@
 
 julia_version = "1.10.1"
 manifest_format = "2.0"
-project_hash = "4ffce7fd1411ed0e6e2d4d20d9ea0df77ef8431e"
+project_hash = "86cf87a169b5e092cd2f3dad6f887d37e7758a61"
 
 [[deps.ADTypes]]
 git-tree-sha1 = "41c37aa88889c171f1300ceac1313c06e891d245"
@@ -1370,11 +1370,11 @@ version = "0.12.3"
 
 [[deps.ParametricMCPs]]
 deps = ["ChainRulesCore", "ForwardDiff", "LinearAlgebra", "PATHSolver", "SparseArrays", "Symbolics"]
-git-tree-sha1 = "5948ce50b191d80a43282e950dc1668570b71b32"
-repo-rev = "feature/symbolics_parallel"
+git-tree-sha1 = "653487ea3bb117323516b3f6668ac2f16fcbba63"
+repo-rev = "main"
 repo-url = "https://github.com/lassepe/ParametricMCPs.jl.git"
 uuid = "9b992ff8-05bb-4ea1-b9d2-5ef72d82f7ad"
-version = "0.1.9"
+version = "0.1.10"
 
 [[deps.Parsers]]
 deps = ["Dates", "PrecompileTools", "UUIDs"]
