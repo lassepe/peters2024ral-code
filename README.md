@@ -9,7 +9,7 @@
 
 [![teaser](./media/teaser.png)](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10400882)
 
-Code for the [RA-L 2024 paper "Contingency Games for Multi-Agent Interactions."]( https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10400882)
+Code for the [RA-L 2024 paper "Contingency Games for Multi-Agent Interaction"](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10400882).
 Visit the [project website](https://lasse-peters.net/pub/contingency-games) for more information, including an interactive demo of our approach.
 
 ---
@@ -42,7 +42,7 @@ You can find more examples in the `ContingencyGames.Examples` module.
 
 ### Large Scale Monte Carlo Simulation and Plots for the RA-L 2024 Paper
 
-The code to reproduce the large scale Monte Carlo simulations and plots from the RA-L 2024 paper is available in [`MonteCarloStudy.jl`](/MonteCarloStudy.jl).
+The code to reproduce the large scale Monte Carlo simulations and plots from the RA-L 2024 paper is available in [`MonteCarloStudy.jl`](/src/MonteCarloStudy/MonteCarloStudy.jl).
 
 All simulations follow a similar pattern with separate functions for problem generation, running the study, and plotting the results. For example, to generate the plots for the 3-player receding-horizon overtaking study:
 
